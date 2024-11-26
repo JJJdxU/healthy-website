@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>体检健康</title>
+		<style type="text/css">
+			body{
+				background-color: #F6F6F6;
+			}
+			header{
+				background-color: #eff4fa;
+				width: 100%;
+				height: 75px;
+				margin-top: -10px;
+				border-bottom: solid 1px cornflowerblue;
+			}
+			#righttou{
+				margin-left: 1180px;
+				margin-top: -20px;
+			}
+			#righttou a{
+				text-decoration: none;
+				color: #225592;
+				margin-right:20px ;
+			}
+			#righttou a:hover{
+				color: red;
+				text-decoration: underline;
+			}
+			footer{
+				background-color: #eff4fa;
+				width: 100%;
+				height: 85px;
+				margin-top: 10px;
+				border-top: solid 1px cornflowerblue;
+				padding-top: 20px;
+			}
+			footer p{
+				text-align: center;
+				
+			}
+			footer a{
+				color: #225592;
+				text-decoration: none;
+				margin-right: 10px;
+				margin-left: 130px;
+			}
+			footer a:hover{
+				color: red;
+				text-decoration: underline;
+			}
+			#box{
+				height: 700px;
+			}
+			#city{
+				width: 65px;
+				height: 20px;
+				margin-left: 290px;
+				margin-top: -50px;
+			}
+			#city a{
+				font-family: "微软雅黑";
+				font-size: 15px;
+				text-decoration: none;
+				color: black;
+			}
+			#city a:hover{
+				color: red;
+			}
+			#daohang{
+				width: 100%;
+				height: 50px;
+				margin-top: 10px;
+				border-bottom: #636363 solid 1px;
+			}
+			#daohang a{
+				font-family: "微软雅黑";
+				font-size: 25px;
+				color:black;
+				text-decoration: none;
+				margin-right: 50px;
+				margin-left: 150px;
+			}
+			#daohang a:hover{
+				color: dodgerblue;
+			}
+			#dizhi{
+				background-color: #006ec8;
+				border-radius: 15px 15px 15px 15px;
+				width: 420px;
+				height: 50px;
+				margin-left: 600px;
+				margin-top: 40px;
+			}
+			#dizhi a{
+				font-family: "微软雅黑";
+				font-size: 30px;
+				margin-left: 78px;
+				text-decoration: none;
+				color: white;
+			}
+			#jigou{
+				background-color: #ececec;
+				width: 1260px;
+				height: 450px;
+				margin-left: 155px;
+				margin-top: 60px;
+			}
+			#tu1{
+				width:200px ;
+				height: 200px;
+				background-color: #00BFFF;
+			}
+			#tu1 img{
+				width: 200px;
+				height: 200px;
+			}
+			#word1{
+				width: 200px;
+				height: 200px;
+				margin-left: 220px;
+				margin-top: -220px;
+			}
+			#word1 p{
+				font-family: "微软雅黑";
+				font-size: 19px;
+				font-weight: 100;
+				line-height: 30px;
+			}
+			#word1 h4{
+				padding-top: 10px;
+			}
+			#tu2{
+				width:400px ;
+				height: 200px;
+				margin-left: 420px;
+				margin-top: -200px;
+			}
+			#tu2 img{
+				width: 200px;
+				height: 200px;
+			}
+			#word2{
+				width: 200px;
+				height: 200px;
+				margin-left: 630px;
+				margin-top: -220px;
+			}
+			#word2 p{
+				font-family: "微软雅黑";
+				font-size: 19px;
+				font-weight: 100;
+				line-height: 30px;
+			}
+			#word2 h4{
+				padding-top: 10px;
+			}
+			#tu3{
+				width:400px ;
+				height: 200px;
+
+				margin-left: 850px;
+				margin-top: -200px;
+			}
+			#tu3 img{
+				width: 200px;
+				height: 200px;
+			}
+			#word3{
+				width: 200px;
+				height: 200px;
+				margin-left: 1060px;
+				margin-top: -220px;
+			}
+			#word3 p{
+				font-family: "微软雅黑";
+				font-size: 19px;
+				font-weight: 100;
+				line-height: 30px;
+			}
+			#word3 h4{
+				padding-top: 10px;
+			}
+			#tu4{
+				width:200px ;
+				height: 200px;
+				margin-top: 20px;
+			}
+			#tu4 img{
+				width: 200px;
+				height: 200px;
+			}
+			#word4{
+				width: 200px;
+				height: 200px;
+				margin-left: 220px;
+				margin-top: -220px;
+			}
+			#word4 p{
+				font-family: "微软雅黑";
+				font-size: 19px;
+				font-weight: 100;
+				line-height: 30px;
+			}
+			#word4 h4{
+				padding-top: 10px;
+			}
+			#tu5{
+				width:400px ;
+				height: 200px;
+				margin-left: 420px;
+				margin-top: -200px;
+			}
+			#tu5 img{
+				width: 200px;
+				height: 200px;
+			}
+			#word5{
+				width: 200px;
+				height: 200px;
+				margin-left: 630px;
+				margin-top: -220px;
+			}
+			#word5 p{
+				font-family: "微软雅黑";
+				font-size: 19px;
+				font-weight: 100;
+				line-height: 30px;
+			}
+			#word5 h4{
+				padding-top: 10px;
+			}
+			#tu6{
+				width:400px ;
+				height: 200px;
+				margin-left: 850px;
+				margin-top: -200px;
+			}
+			#tu6 img{
+				width: 200px;
+				height: 200px;
+			}
+			#word6{
+				width: 200px;
+				height: 200px;
+				margin-left: 1060px;
+				margin-top: -220px;
+			}
+			#word6 p{
+				font-family: "微软雅黑";
+				font-size: 19px;
+				font-weight: 100;
+				line-height: 30px;
+			}
+			#word6 h4{
+				padding-top: 10px;
+			}
+			#jigou a{
+				color: blue;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="tou">
+				<div id="signinlogo">
+					<img src="img/屏幕截图 2024-06-08 181145.png"/>
+				</div>
+				<div id="city">
+					<a href="#">城市切换</a>
+				</div>
+				<div id="righttou">
+					<a href="#">体检预约 | </a>
+					<a href="#">体检记录 | </a>
+					<a href="#">医保社保 | </a>
+					<a href="#">我的账户</a>
+				</div>
+			</div>
+		</header>
+		<div id="box">
+			<div id="daohang">
+					<a href="#">首页</a>
+					<a href="#">体检医院</a>
+					<a href="#">体检套餐</a>
+					<a href="#">企业团检</a>
+					<a href="#">体检百科</a>
+			</div>
+				<div id="dizhi">
+					 <a href="#">进入 兰州 体检中心</a>
+				</div>
+			<div id="jigou">
+				<div id="tu1">
+					<img src="img/机构1.gif"/>
+				</div>
+				<div id="word1">
+					<h4><a href="#">体检机构</a></h4>
+					<p>中康体检网与全国4000多家医院、知名体检机构建立战略合作关系，是官方授权的体检预约服务平台。</p>
+				</div>
+				<div id="tu2">
+					<img src="img/机构2.gif"/>
+				</div>
+				<div id="word2">
+					<h4><a href="#">体检套餐</a></h4>
+					<p>中康体检网依托三级甲等医院与知名体检机构等，为个人和企业客户提供100多种体检类别的预订服务。</p>
+				</div>
+				<div id="tu3">
+					<img src="img/机构3.gif"/>
+				</div>
+				<div id="word3">
+					<h4><a href="#">单位体检</a></h4>
+					<p>中康体检网-单位团体体检解决方案提供商，专业高效，累计已服务10000多家企业单位。</p>
+				</div>
+				<div id="tu4">
+					<img src="img/机构四.gif"/>
+				</div>
+				<div id="word4">
+					<h4><a href="#">本周特惠</a></h4>
+					<p>中康体检网提供全国各个地区最新优惠的体检套餐、是您预约特惠体检套餐优质专业平台。</p>
+				</div>
+				<div id="tu5">
+					<img src="img/机构5.gif"/>
+				</div>
+				<div id="word5">
+					<h4><a href="#">pet-ct检查</a></h4>
+					<p>中康体检网提供全国各个地区的petct检查预约、满足您高端体检的需求。</p>
+				</div>
+				<div id="tu6">
+					<img src="img/机构6.gif"/>
+				</div>
+				<div id="word6">
+					<h4><a href="#">体检指南</a></h4>
+					<p>中康体检网提供健康体检知识、健康体检常识，为您的健康体检做正确的指导。</p>
+				</div>
+			</div>
+		</div>
+				
+		
+		
+		
+		
+		<footer>
+			<a href="#">服务条款 </a>
+			<a href="#">客服中心 </a>
+			<a href="#">联系我们 </a>
+			<a href="#">帮助中心 </a>
+			<a href="#">账户安全 </a>
+			<a href="#">我要举报 </a>
+			<a href="#">隐私政策 </a>
+			<p>©1998 - 2024 Tencent Inc. All Rights Reserved. ©1998 - 2024</p>
+		</footer>
+	</body>
+</html>

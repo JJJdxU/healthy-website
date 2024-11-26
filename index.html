@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>健康生活</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#beijing{
+				height: 800px;
+			}
+			#beijing img{
+				width: 1575px;
+				height: 1200px;
+			}
+			#pingtaijieshao{
+				margin-left: 200px;
+			}
+			h1{
+				width: 850px;
+				font-family: "微软雅黑";
+				font-size: 50px;
+				margin-left: 400px;
+				margin-top: -70px;
+			}
+			#jieshao p{
+				font-size: 20px;
+				text-align: justify;
+				text-indent: 2em;
+				margin: 20px 200px;
+				color: #666;
+				letter-spacing: 1px;
+			}
+			#gundong{
+				margin: 70px 200px;
+				width: 39%;
+				height: 400px;
+				padding-bottom: -10px;
+				overflow: auto;
+			}
+			.tupian img{
+				width: 590px;
+			}
+			.tupian p{
+				color: white;
+				line-height: 30px;
+				text-align: center;
+				width: 590px;
+				float: left;
+				background-color: rgba(0,0,0,0.5);
+				/*margin-top: -30px;*/
+				z-index: 1;
+				position: relative;
+				top: -33px;
+			}
+			.tupian p:hover{
+				color: navajowhite;
+			}
+			#liebiao{
+				float: left;
+				margin-top: -460px;
+				margin-left: 850px;
+				width: 39%;
+				height: 400px;
+			}
+			#liebiao a{
+				text-decoration: none;
+				color: black;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				letter-spacing: 1px;
+				line-height: 35px;
+			}
+			#liebiao ul {
+				list-style-image: url(img/dian1.png);
+			}
+			#liebiao a:hover{
+				color: cornflowerblue;
+			}
+			#hengxiang{
+				background-color: #f6f6f6;
+				margin-top: -40px;
+				height: 500px;
+				width: 1554px;
+			}
+			#tupian2 img{
+				padding: 5px 400px;
+				width: 50%;
+			}
+			#tubox{
+				width: 1150px;
+				margin: 20px 200px;
+				overflow-x: auto;
+				white-space: nowrap;/*防止内容换行*/
+			}
+			#tubox a{
+				display: inline-block;
+				text-decoration: none;
+				color: #009240;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				font-weight: 800;
+				text-align: center;
+			}
+			#tubox a:hover{
+				color: red;
+				transition: color 0.3s ease;
+			}
+			#tubox img{
+				margin-right: 10px;
+				border-radius: 20px;
+			}
+	 		#shuangliebiao{
+	 			background: url(img/框.png);
+	 			background-repeat:no-repeat ;
+	 			margin: 40px 185px;
+	 			height: 500px;
+	 		}
+	 		.box{
+	 			height: 500px;
+	 		}
+	 		.leftbox img{
+	 			margin: 60px 40px;
+	 		}
+	 		.leftbox{
+	 			width: 50%;
+	 			height: 500px;
+	 		}
+	 		.leftbox h3{
+	 			float: right;
+	 			margin-top: 80px;
+	 			margin-right: 40px;
+	 			
+	 			
+	 		}
+	 		.leftbox ul{
+	 			list-style-image: url(img/dian1.png);
+	 			float: left;
+	 			margin-left: 65px;
+	 			margin-top: -20px;
+	 			border-top: dashed #636363 1px;
+	 			padding-top: 15px;
+	 			
+			}
+	 		.leftbox a{
+	 			text-decoration: none;
+				color: black;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				letter-spacing: 1px;
+				line-height: 35px;
+	 		}
+	 		.leftbox a:hover{
+	 			color: cornflowerblue;
+	 		}
+	 		
+	 		
+	 		
+	 		.rightbox img{
+	 			margin: 60px 40px;
+	 			
+	 		}
+	 		.rightbox{
+	 			width: 50%;
+	 			height: 500px;
+	 			float: right;
+	 			margin-top: -500px;
+	 		}
+	 		.rightbox h3{
+	 			float: right;
+	 			margin-top: 80px;
+	 			margin-right: 40px;
+	 		}
+	 		.rightbox ul{
+	 			list-style-image: url(img/dian1.png);
+	 			float: left;
+	 			margin-left: 65px;
+	 			margin-top: -20px;
+	 			padding-top: 15px;
+	 			border-top: dashed #636363 1px;
+	 			
+			}
+	 		.rightbox a{
+	 			text-decoration: none;
+				color: black;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				letter-spacing: 1px;
+				line-height: 35px;
+	 		}
+	 		.rightbox a:hover{
+	 			color: cornflowerblue;
+	 		}
+	 		#container{
+	 			background-color: #F6F6F6;
+	 			height: 350px;
+	 			margin: 20px auto;
+	 		}
+	 		.col{
+	 			padding:20px 200px;
+	 			column-count: 3;
+	 			column-gap: 20px;
+	 		}
+	 		.col h3{
+	 			margin: 40px 20px;
+	 			font-family: "微软雅黑";
+	 			font-size: 30px;
+	 		}
+	 		.pic{
+	 			height: 300px;
+	 			padding-top: 5px;
+	 			background-color: white;
+	 		}
+	 		.pic img{
+	 			float: right;
+	 			margin-top: -90px;
+	 			margin-right:160px ;
+	 		}
+	 		.pic a{
+	 			text-decoration: none;
+	 			color: #666;
+	 			font-size: 16px;
+	 			font-family: "微软雅黑";
+	 		}
+	 		.pic ul{
+	 			list-style-type: none;
+	 			margin-left: 25px;
+	 		}
+	 		.pic ul li{
+	 			margin-top: 10px;
+	 		}
+	 		.pic a:hover{
+	 			color: cornflowerblue;
+	 		}
+	 		
+	 		
+	 		#touxiang {
+	 			margin: 20px 200px;
+	 			height: 600px;
+	 			
+	 			
+	 		}
+	 		#allren{
+	 			column-count: 10;
+	 			width: 1170px;
+	 			overflow-x: auto;
+	 		}
+	 		#allren a{
+	 			text-decoration: none;
+	 			color: #000000;
+	 		}
+	 		#allren a:hover{
+	 			color: cornflowerblue;
+	 		}
+	 		#allren p{
+	 			text-align: center;
+	 			margin-right: 80px;
+	 		}
+	 		#rencai img{
+	 			margin:50px 200px;
+	 		}
+	 		.renxiang{
+	 			
+	 			display: inline-block;
+	 			width: 180px;
+	 			margin-left: 10px;
+	 			margin-bottom: 10px;
+	 		}
+	 		.renxiang img{
+	 			width: 110px;
+	 			height: 120px;
+	 			border-radius: 50%;
+	 		}
+	 		footer{
+			margin-top: -80px;
+			background-color: #f6f6f6;
+			height: 70px;
+		}
+		footer p{
+			color: black;
+			letter-spacing: 3px;
+			text-align: center;
+			padding-top: 10px;
+		}
+		footer a{
+			color: #000000;
+			text-decoration: none;
+		}
+		footer a:hover{
+			color: red;
+			text-decoration: underline;
+		}
+	 		#daohang{
+	 			width: 100%;
+	 			margin-bottom: 50px;
+	 			margin-left: 40px;
+	 			
+	 		}
+	 		#daohang a{
+	 			font-family: "微软雅黑";
+	 			text-decoration: none;
+	 			margin: -20px 70px;
+	 			font-weight: 800;
+	 			font-size: 25px;
+	 			color: black;
+	 			border-radius: 20%;
+	 		}
+	 		#daohang a:hover{
+	 			background-color: #009240;
+	 			color: white;
+	 			border-radius: 30%;
+	 		}
+	 		#kuang1{
+	 			background-color: #00BFFF;
+	 			width: 100%;
+	 			height: 50px;
+	 			margin-bottom: 30px;
+	 			
+	 		}
+	 		input[type="search"]{
+				width: 650px;
+				height: 50px;
+				padding: 5px;
+				border: 3px solid black;
+				border-radius: 5px;
+				margin-left: 380px;
+			}
+			#chazhao{
+				width: 80px;
+				height: 50px;
+				margin-left: 1050px;
+				margin-top: -70px;
+			}
+			#chazhao a{
+				font-size: 25px;
+				text-decoration: none;
+				color: #000000;
+			}
+			#chazhao a:hover{
+				background: green;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="beijing">
+			<img src="img/背景.png"/>
+		</div>
+		<div id="daohang">
+			<a href="饮食健康.html">饮食健康</a>
+			<a href="心理健康.html">心理健康</a>
+			<a href="中老年人.html">中老年人</a>
+			<a href="体育运动.html">体育运动</a>
+			<a href="本站产品.html">本站产品</a>
+			<a href="睡眠健康.html">睡眠健康</a>
+		</div>
+		<div id="kuang1">
+			<input type="search" placeholder="输入关键字" />
+		</div>
+		<div id="chazhao">
+			<a href="#">查找</a>
+		</div>
+		<img src="img/jieshao.png"/ id="pingtaijieshao">
+		<h1>践行健康生活方式 养成文明行为习惯</h1>
+		<div id="jieshao">
+			<p>全民健康生活方式行动（China Healthy Lifestyle for All）启动于2007年，
+			已成为我国慢病防控和健康生活方式倡导的最具影响力的品牌行动。该行动由原
+			卫生部疾控局、全国爱卫办与中国疾控中心共同发起，下设国家行动办公室挂靠
+			中国疾控中心。</p>
+		<p>该行动以“和谐我生活，健康中国人”为主题，2007 -2015年行动第一阶段，以倡
+			导“健康一二一”（每日一万步，吃动两平衡，健康一辈子）为切入点，倡导“吃动
+			平衡”理念；2016年国家行动办公室提出“三减三健”理念，并于2017年由原国家
+			卫计委牵头，联合国家体育总局、中华全国总工会、共青团中央、全国妇联等4家
+			单位联合启动第二阶段（2017-2025年）工作。</p>
+		<p>目前该行动已覆盖超过全国97%的县区，健康文明的生活方式、“吃动平衡”“三减三
+			健”等理念已全面融入健康中国行动等多个国家纲领性文件。</p>
+		</div>
+		<div id="gundong">
+			<div class="tupian">
+				<a href="#">
+					<img src="img/MAIN1692669590688PTO8DG7XY0.png"/>
+					<p>保持健康的体重，这些方法你要知道！|健康过暑假</p>
+				</a>
+				<a href="#">
+					<img src="img/MAIN16926695906145ORQEK02MU.png"/>
+					<p>“现代化最重要的指标还是人民健康”————写在第15个全民健身日之际</p>
+				</a>
+				<a href="#">
+					<img src="img/MAIN1692669590654NCXTIUF5UT.png"/>
+					<p>一图读懂防控儿童青少年近视核心知识十条</p>
+				</a>
+			</div>
+		</div>
+		<div id="liebiao">
+			<ul>
+				<li><a href="个人卫生.html">关注个人卫生健康，刻不容缓！</li></a>
+				<li><a href="情绪健康.html">情绪健康：注重压力释放，畅享健康生活 </li>		  </a>
+				<li><a href="体检.html">国民健康与体检</li>		  </a>
+				<li><a href="亲子健康.html">《亲子健康》</li>				  </a>
+				<li><a href="#">人民日报：践行文明健康的生活方式</li>				  </a>
+				<li><a href="期望寿命.html">北大医学部：健康生活方式能提高中国成年人的期望寿命</li>			  </a>
+				<li><a href="#">2023年“世界肝炎日”主题宣传海报发布</li>			  </a>
+				<li><a href="#">“三减三健”是个啥？今天告诉你答案！</li>				  </a>
+				<li><a href="#">目前全国已超过96%县区开展全民健康生活方式行动</li>	  </a>
+				<li><a href="#">关于开展2022年全民健康生活方式宣传月活动的通知</li>	  </a>				
+				<li><a href="#">国务院办公厅关于印发“十四五”国民健康规划的通知</li>	  </a>
+			</ul>
+		</div>
+		<div id="hengxiang">
+			<div id="tupian2">
+				<img src="img/t1 (1).png"/>
+			</div>
+			<div id="tubox">
+				<a href="#">
+					<img src="img/MAIN1692667217974YET4SZBAGM.png"/>
+					<p>儿童健康</p>
+				</a>
+				<a href="#">
+					<img src="img/MAIN1692667217948J3JLV045NO.png"/>
+					<p>深圳市慢病防治中心AD宣传片</p>
+				</a>
+				<a href="视频2.html">
+					<img src="img/MAIN16926672180004GIZZYAMG0.png"/>
+					<p>陈君石院士谈转基因食品安全</p>
+				</a>
+				<a href="视频1.html">
+					<img src="img/MAIN1692668612288H0WIB6OIRE.jpg"/>
+					<p>老年人摄入足够多蛋白质很重要</p>
+				</a>
+			</div>
+		</div>
+		<div id="shuangliebiao">
+			<div class="box">
+				<div class="leftbox">
+					<img src="img/s_1 (1).png"/>
+					<h3><a href="#">查看更多 >></a></h3>
+					<ul>
+						<li><a href="#">国务院印发健康中国行动意见，明确了15个专项行动</a></li>
+						<li><a href="#">关于印发全民健康生活方式行动方案</a></li>
+						<li><a href="#">十五部门印发《“十四五”健康老龄化规划》</a></li>
+						<li><a href="#">国务院办公厅关于印发“十四五”国民健康规划的通知</a></li>
+						<li><a href="#">关于印发全民健康生活方式行动方案</a></li>
+						<li><a href="#">关于全民健康生活方式行动十五年总结工作的通知</a></li>
+						<li><a href="#">关于开展2022年全民健康生活方式宣传月活动</a></li>
+						<li><a href="#">国家卫生健康委疾控局关于持续推进“三减三健”</a></li>
+					</ul>
+				</div>
+				<div class="rightbox">
+					<img src="img/s_1 (1).png"/>
+					<h3><a href="#">查看更多 >></a></h3>
+					<ul>
+						<li><a href="#">重庆市江津区疾控中心开展全民健康生活宣传月活动</a></li>
+						<li><a href="#">王贺胜赴中国疾控中心开展专题调研</a></li>
+						<li><a href="#">目前全国已超过96%县区开展全民健康生活方式行动</a></li>
+						<li><a href="#">全民健康生活方式日：合理膳食 吃出健康</a></li>
+						<li><a href="#">6机构联合提示：这些情况需要注意电解质平衡</a></li>
+						<li><a href="#">建邺区全民健身日活动启动仪式暨城市定向赛开启</a></li>
+						<li><a href="#">《国民健康生活方式洞察及干预研究报告》</a></li>
+						<li><a href="#">倡导健康生活方式十五载 推广科普知识惠民生</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="col">
+				<div class="pic">
+					<h3>健康科普</h3>
+					<img src="img/icon_1.png"/>
+					<ul>
+						<li><a href="#">5个人就有1个中招，这样东西竟是隐藏“健康杀手”！</a></li>
+						<li><a href="#">患有高血压 这样来“食养”</a>					  </li>
+						<li><a href="#">世界无烟日：吸烟危害大 中医戒烟有妙招</a>		  </li>
+						<li><a href="#">“三减三健” 健康相伴</a>						  </li>
+					</ul>
+				</div>
+				<div class="pic">
+					<h3>案例展示</h3>
+					<img src="img/icon_2.png"/>
+					<ul>
+						<li><a href="#">打造老年人身心健康服务南山样板</a></li>
+						<li><a href="#">高质量打造基层脑卒中综合防控“南山样板”</a></li>
+						<li><a href="#">部门协作联手打造智慧健康步道</a></li>
+						<li><a href="#">健康菜进万家 健康生活你我他</a></li>
+					</ul>
+				</div>
+				<div class="pic">
+					<h3>资源中心</h3>
+					<img src="img/icon_3.png"/>
+					<ul>
+						<li><a href="#">【资料下载】2022年三减主题宣传海报</a></li>
+						<li><a href="#">【资料下载】2022年三减-减油主题宣传海报</a></li>
+						<li><a href="#">【资料下载】2022年三减-减盐主题宣传海报</a></li>
+						<li><a href="#">【资料下载】2022年三减-减糖主题宣传海报</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="touxiang">
+			<div id="rencai">
+				<img src="img/t4.png"/>
+			</div>
+			
+			<div id="allren">	
+			<div class="renxiang">
+				<a href="#"><img src="img/11.jpg"/></a>
+				<p><a href="#">张1</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/12.jpg"/></a>
+				<p><a href="#">张2</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/13.jpg"/></a>
+				<p><a href="#">张3</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/14.jpg"/></a>
+				<p><a href="#">张4</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/15.jpg"/></a>
+				<p><a href="#">张5</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/16.jpg"/></a>
+				<p><a href="#">张6</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/17.jpg"/></a>
+				<p><a href="#">张7</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/18.jpg"/></a>
+				<p><a href="#">张8</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/19.jpg"/></a>
+				<p><a href="#">张9</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/110.jpg"/></a>
+				<p><a href="#">张10</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/21.jpg"/></a>
+				<p><a href="#">王1</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/22.jpg"/></a>
+				<p><a href="#">王2</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/23.jpg"/></a>
+				<p><a href="#">王3</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/24.jpg"/></a>
+				<p><a href="#">王4</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/25.jpg"/></a>
+				<p><a href="#">王5</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/26.jpg"/></a>
+				<p><a href="#">王6</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/27.jpg"/></a>
+				<p><a href="#">王7</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/28.jpg"/></a>
+				<p><a href="#">王8</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/29.jpg"/></a>
+				<p><a href="#">王9</a></p>
+			</div>
+			<div class="renxiang">
+				<a href="#"><img src="img/210.jpg"/></a>
+				<p><a href="#">王10</a></p>
+			</div>
+			</div>
+		</div>
+		<footer>
+			<div id="leftfooter">
+				<p>Copyright © 2016-2024 体育与健康 版权所有  吉ICP备12004241号-1</p>
+				<p>联系我们:<a href="#">666666666@qq.com</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
